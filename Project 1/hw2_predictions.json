@@ -1,0 +1,13 @@
+{
+  "written": "2026-11-11T23:04:20",
+  "pixel_pitch_um": 2.4216641384157236,
+  "pitch_choice": "exif",
+  "f_number": 1.7799999713880652,
+  "wavelength_um": 0.55,
+  "nu_c_cyc_per_um": 1.021450476071625,
+  "nyquist_green_cyc_per_um": 0.10323479463322789,
+  "crossover_N": 8.806051412420812,
+  "mtf_at_green_nyquist": 0.78465905531368,
+  "mtf50_cyc_per_um": 0.19800011057810057,
+  "mtf50_cyc_per_green_px": 0.9589795343786679
+}
