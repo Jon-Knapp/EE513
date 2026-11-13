@@ -1,0 +1,44 @@
+{
+  "_README": "EE 513 Project 1. Copy this file into your repository as results.json and replace every value with your own measurement. Each entry is [value, uncertainty] in the units named by the key. Use null for anything you did not measure; do not delete keys, and do not invent an uncertainty you cannot defend.",
+
+  "camera": "iPhone 16 Pro Max back camera 6.765mm f/1.78",
+  "capture_app": null,
+  "cfa_pattern": "BGGR",
+  "raw_width_px": 4032,
+  "raw_height_px": 3024,
+  "binned_from_higher_resolution_sensor": true,
+
+  "focal_length_px": [2901.8, 4.6],
+  "focal_length_mm": [7.03, 0.15],
+  "principal_point_x_px": [2026.1, 4.3],
+  "principal_point_y_px": [1510.0, 4.4],
+  "distortion_k1": [0.232, 0.008],
+  "distortion_k2": [-0.946, 0.038],
+  "distortion_p1": [0.00102, 0.00051],
+  "distortion_p2": [-0.00075, 0.00062],
+  "distortion_k3": [1.070, 0.063],
+  "reprojection_rms_px": [0.863, 0.029],
+  "n_calibration_images_used": 25,
+  "checkerboard_square_mm_measured": [20.0, 0.5],
+
+  "mtf50_center_cy_per_px": [0.403, 0.032],
+  "mtf50_corner_mean_cy_per_px": null,
+  "mtf50_corner_worst_cy_per_px": null,
+
+  "conversion_gain_dn_per_e": [0.246, 0.021],
+  "read_noise_e": [6.9, 0.6],
+  "dark_current_e_per_s": [0.3, 0.3],
+  "iso_of_noise_measurement": 50,
+  "black_level_dn": [527.4, 0.1],
+  "white_level_dn": 4095,
+  "vendor_noiseprofile_present": true,
+
+  "dynamic_range_stops": [11.04, 0.06],
+  "dynamic_range_criterion": "log2(full scale / read noise): full scale = white minus black level = 3567 DN; low end = read noise from difference-of-pairs dark frames (1.694 DN), i.e. SNR = 1 from read noise alone. Uncertainty bounded by the green sites saturating near 3950 DN rather than 4095 DN (0.06 stops).",
+
+  "delta_e_metric": "CIEDE2000",
+  "colorchecker_reference_set": "ColorChecker24 - After November 2014",
+  "delta_e_mean_before_ccm": [12.35, 0.08],
+  "delta_e_mean_after_ccm": [3.06, 0.04],
+  "delta_e_worst_after_ccm": [8.89, 0.26]
+}
