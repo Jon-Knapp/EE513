@@ -1,7 +1,8 @@
 """Project 1: the two measurements the homework notebooks did not already produce.
 
 1. Calibration uncertainty by leave-one-view-out jackknife, from the corners cached by Homework 2
-   (hw2_checkerboard_corners.npz), for both the four- and five-coefficient distortion models.
+   (hw2_checkerboard_corners.npz), for both the four- and five-coefficient distortion models,
+   and a board-flatness check (homography fit to corners undistorted without their own view).
 2. MTF50 on the corner squares of the slanted-edge target, in the same six captures and with the
    Homework 2 notebook's own functions (green_plane, slanted_edge_mtf, find_squares, edge_rois),
    which are read out of that notebook so there is one copy of the code.
@@ -66,6 +67,54 @@ for label, k3 in (("four_coef", False), ("five_coef", True)):
     calib[label], depth = jackknife(corners, names, image_size, k3)
 calib["n_views"] = len(names)
 calib["board_depth_mm"] = {"median": float(np.median(depth)), "min": float(depth.min()), "max": float(depth.max())}
+
+
+# ----------------------------------------------------------------------------- 1b. board flatness
+# A flat board maps to the image by a homography once lens distortion is removed. Fitting the
+# homography to the RAW corners (the Homework 2 test) mixes distortion into the residual, so here
+# each view is undistorted with a calibration that leaves that view out (no circularity), and the
+# radial share of the raw residual shows how much of it is distortion. 5-coefficient model.
+OBJ2 = (np.mgrid[0:PATTERN[0], 0:PATTERN[1]].T.reshape(-1, 2) * SQUARE_MM).astype(np.float32)
+
+
+def homography_rms(pts):
+    H, _ = cv2.findHomography(OBJ2, pts)
+    res = pts - cv2.perspectiveTransform(OBJ2.reshape(-1, 1, 2), H).reshape(-1, 2)
+    return float(np.sqrt((res ** 2).sum(axis=1).mean())), res
+
+
+def k_and_dist(view_names):
+    objp = np.c_[OBJ2, np.zeros(len(OBJ2), np.float32)]
+    _, K, d, _, _ = cv2.calibrateCamera([objp] * len(view_names), [corners[n] for n in view_names],
+                                        image_size, None, None)
+    return K, d
+
+
+K_all, _ = k_and_dist(names)
+raw_rms, radial_share, loo_rms = [], [], []
+for n in names:
+    p = corners[n].reshape(-1, 2).astype(np.float64)
+    e, res = homography_rms(p)
+    raw_rms.append(e)
+    u = p - K_all[:2, 2]
+    u /= np.linalg.norm(u, axis=1, keepdims=True)
+    radial_share.append(float(((res * u).sum(axis=1) ** 2).sum() / (res ** 2).sum()))
+    K2, d2 = k_and_dist([m for m in names if m != n])
+    und = cv2.undistortPoints(p.reshape(-1, 1, 2).astype(np.float32), K2, d2, P=K2).reshape(-1, 2)
+    loo_rms.append(homography_rms(und.astype(np.float64))[0])
+
+# Size of a bulge that would explain the whole undistorted residual: an out-of-plane shift dz at
+# X mm off-axis, Z mm away, moves the image point by about f_px * X * dz / Z^2 (X = 100 mm here).
+f_px = calib["five_coef"]["f"]["value"]
+px_per_mm = f_px * 100.0 / calib["board_depth_mm"]["median"] ** 2
+calib["flatness"] = {
+    "raw_homography_rms_px": {"median": float(np.median(raw_rms)), "max": float(np.max(raw_rms))},
+    "raw_residual_radial_share": float(np.median(radial_share)),
+    "undistorted_leave_one_out_homography_rms_px": {"median": float(np.median(loo_rms)),
+                                                     "max": float(np.max(loo_rms))},
+    "image_shift_px_per_mm_out_of_plane": float(px_per_mm),
+    "flatness_bound_mm": float(np.median(loo_rms) / px_per_mm),
+}
 
 
 # ----------------------------------------------------------------------------- 2. corner MTF

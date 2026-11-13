@@ -2,7 +2,7 @@
   "_README": "EE 513 Project 1. Copy this file into your repository as results.json and replace every value with your own measurement. Each entry is [value, uncertainty] in the units named by the key. Use null for anything you did not measure; do not delete keys, and do not invent an uncertainty you cannot defend.",
 
   "camera": "iPhone 16 Pro Max back camera 6.765mm f/1.78",
-  "capture_app": null,
+  "capture_app": "Halide Mark III - Pro Camera v3.3.3",
   "cfa_pattern": "BGGR",
   "raw_width_px": 4032,
   "raw_height_px": 3024,
