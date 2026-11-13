@@ -1,0 +1,7 @@
+{
+  "color_metric": "CIEDE2000 (CIE 2000 in colour-science)",
+  "color_reference": "colour.CCS_COLOURCHECKERS['ColorChecker24 - After November 2014']",
+  "color_mean_dE_before": 12.35,
+  "color_mean_dE_after": 3.06,
+  "color_worst_patch_after": "15 red (ΔE 8.89)"
+}
