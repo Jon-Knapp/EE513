@@ -10,7 +10,7 @@ for the 0.5× ultra-wide camera and checks both calibrations against a straight 
 against Apple's own distortion correction stored in the DNG.
 
 The report is [`Project 1/Project 1 Report IEEE.ipynb`](Project%201/Project%201%20Report%20IEEE.ipynb)
-(a PDF preview sits beside it). Machine-readable results are in
+(PDF: Project 1/Project 1 Report IEEEv7.pdf). Machine-readable results are in
 [`Project 1/results.json`](Project%201/results.json) (main camera, course template) and
 [`Project 1/results_ultrawide.json`](Project%201/results_ultrawide.json).
 
