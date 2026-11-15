@@ -1,0 +1,47 @@
+{
+  "_README": "EE 513 Project 1, second camera (ambition section): the same template applied to the 0.5x ultra-wide. Only the geometry was measured for this camera; everything else is null. Adopted distortion model: OpenCV rational (k1-k6, p1, p2), chosen because it straightens a metal ruler near the frame edge to 13.9 px, against 28.6 px with five coefficients.",
+
+  "camera": "iPhone 16 Pro Max back camera 2.22mm f/2.2",
+  "capture_app": "Halide Mark III - Pro Camera v3.3.3",
+  "cfa_pattern": "RGGB",
+  "raw_width_px": 4032,
+  "raw_height_px": 3024,
+  "binned_from_higher_resolution_sensor": true,
+
+  "focal_length_px": [1620.4, 1.9],
+  "focal_length_mm": [2.21, 0.08],
+  "principal_point_x_px": [2018.2, 1.4],
+  "principal_point_y_px": [1510.7, 1.5],
+  "distortion_k1": [-0.638, 0.174],
+  "distortion_k2": [2.079, 0.219],
+  "distortion_p1": [-0.00027, 0.00010],
+  "distortion_p2": [-0.00016, 0.00014],
+  "distortion_k3": [-0.701, 0.087],
+  "distortion_k4": [-0.592, 0.177],
+  "distortion_k5": [1.997, 0.22],
+  "distortion_k6": [-0.662, 0.088],
+  "reprojection_rms_px": [0.736, 0.042],
+  "n_calibration_images_used": 33,
+  "checkerboard_square_mm_measured": [20.0, 0.5],
+
+  "mtf50_center_cy_per_px": null,
+  "mtf50_corner_mean_cy_per_px": null,
+  "mtf50_corner_worst_cy_per_px": null,
+
+  "conversion_gain_dn_per_e": null,
+  "read_noise_e": null,
+  "dark_current_e_per_s": null,
+  "iso_of_noise_measurement": null,
+  "black_level_dn": null,
+  "white_level_dn": null,
+  "vendor_noiseprofile_present": true,
+
+  "dynamic_range_stops": null,
+  "dynamic_range_criterion": null,
+
+  "delta_e_metric": null,
+  "colorchecker_reference_set": null,
+  "delta_e_mean_before_ccm": null,
+  "delta_e_mean_after_ccm": null,
+  "delta_e_worst_after_ccm": null
+}

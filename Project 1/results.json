@@ -21,9 +21,9 @@
   "n_calibration_images_used": 25,
   "checkerboard_square_mm_measured": [20.0, 0.5],
 
-  "mtf50_center_cy_per_px": [0.403, 0.032],
-  "mtf50_corner_mean_cy_per_px": null,
-  "mtf50_corner_worst_cy_per_px": null,
+  "mtf50_center_cy_per_px": [0.453, 0.064],
+  "mtf50_corner_mean_cy_per_px": [0.353, 0.050],
+  "mtf50_corner_worst_cy_per_px": [0.301, 0.042],
 
   "conversion_gain_dn_per_e": [0.246, 0.021],
   "read_noise_e": [6.9, 0.6],
