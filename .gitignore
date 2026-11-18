@@ -220,3 +220,5 @@ __marimo__/
 # Raw captures stay local
 *.DNG
 *.HEIC
+
+*.zip
