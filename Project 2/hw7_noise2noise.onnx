@@ -1,0 +1,414 @@
+
+pytorch
+2.14.0+cpu:Üí
+»	
+noisy
+body.0.weight
+body.0.biasconv2dnode_conv2d"Conv*
+kernel_shape@@†*
+group†*
+auto_pad"NOTSET†*
+	dilations@@†*
+strides@@†*
+pads@@@@†Jí
+	namespaceÑ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.0: torch.nn.modules.conv.Conv2d/conv2d: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']J∏
+pkg.torch.onnx.fx_nodeù%conv2d : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%noisy, %p_body_0_weight, %p_body_0_bias, [1, 1], [1, 1]), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'body', 'body.0', 'conv2d']J‰
+pkg.torch.onnx.stack_trace≈File "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+˜
+conv2drelu	node_relu"ReluJí
+	namespaceÑ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.1: torch.nn.modules.activation.ReLU/relu: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']JÉ
+pkg.torch.onnx.fx_nodei%relu : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d,), kwargs = {})J<
+pkg.torch.onnx.name_scopes['', 'body', 'body.1', 'relu']J‹
+pkg.torch.onnx.stack_traceΩFile "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+–	
+relu
+body.2.weight
+body.2.biasconv2d_1node_conv2d_1"Conv*
+kernel_shape@@†*
+group†*
+auto_pad"NOTSET†*
+	dilations@@†*
+strides@@†*
+pads@@@@†Jî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.2: torch.nn.modules.conv.Conv2d/conv2d_1: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jπ
+pkg.torch.onnx.fx_nodeû%conv2d_1 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu, %p_body_2_weight, %p_body_2_bias, [1, 1], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'body', 'body.2', 'conv2d_1']J‰
+pkg.torch.onnx.stack_trace≈File "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+Ö
+conv2d_1relu_1node_relu_1"ReluJî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.3: torch.nn.modules.activation.ReLU/relu_1: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_1 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_1,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'body', 'body.3', 'relu_1']J‹
+pkg.torch.onnx.stack_traceΩFile "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+‘	
+relu_1
+body.4.weight
+body.4.biasconv2d_2node_conv2d_2"Conv*
+kernel_shape@@†*
+group†*
+auto_pad"NOTSET†*
+	dilations@@†*
+strides@@†*
+pads@@@@†Jî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.4: torch.nn.modules.conv.Conv2d/conv2d_2: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jª
+pkg.torch.onnx.fx_node†%conv2d_2 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu_1, %p_body_4_weight, %p_body_4_bias, [1, 1], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'body', 'body.4', 'conv2d_2']J‰
+pkg.torch.onnx.stack_trace≈File "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+Ö
+conv2d_2relu_2node_relu_2"ReluJî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.5: torch.nn.modules.activation.ReLU/relu_2: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_2 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_2,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'body', 'body.5', 'relu_2']J‹
+pkg.torch.onnx.stack_traceΩFile "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+‘	
+relu_2
+body.6.weight
+body.6.biasconv2d_3node_conv2d_3"Conv*
+kernel_shape@@†*
+group†*
+auto_pad"NOTSET†*
+	dilations@@†*
+strides@@†*
+pads@@@@†Jî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.6: torch.nn.modules.conv.Conv2d/conv2d_3: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jª
+pkg.torch.onnx.fx_node†%conv2d_3 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu_2, %p_body_6_weight, %p_body_6_bias, [1, 1], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'body', 'body.6', 'conv2d_3']J‰
+pkg.torch.onnx.stack_trace≈File "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+Ö
+conv2d_3relu_3node_relu_3"ReluJî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.7: torch.nn.modules.activation.ReLU/relu_3: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_3 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_3,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'body', 'body.7', 'relu_3']J‹
+pkg.torch.onnx.stack_traceΩFile "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+‘	
+relu_3
+body.8.weight
+body.8.biasconv2d_4node_conv2d_4"Conv*
+kernel_shape@@†*
+group†*
+auto_pad"NOTSET†*
+	dilations@@†*
+strides@@†*
+pads@@@@†Jî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.8: torch.nn.modules.conv.Conv2d/conv2d_4: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']Jª
+pkg.torch.onnx.fx_node†%conv2d_4 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu_3, %p_body_8_weight, %p_body_8_bias, [1, 1], [1, 1]), kwargs = {})J@
+pkg.torch.onnx.name_scopes"['', 'body', 'body.8', 'conv2d_4']J‰
+pkg.torch.onnx.stack_trace≈File "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+Ö
+conv2d_4relu_4node_relu_4"ReluJî
+	namespaceÜ: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.9: torch.nn.modules.activation.ReLU/relu_4: aten.relu.defaultJù
+pkg.torch.onnx.class_hierarchy{['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.activation.ReLU', 'aten.relu.default']Já
+pkg.torch.onnx.fx_nodem%relu_4 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv2d_4,), kwargs = {})J>
+pkg.torch.onnx.name_scopes ['', 'body', 'body.9', 'relu_4']J‹
+pkg.torch.onnx.stack_traceΩFile "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\activation.py", line 143, in forward
+    return F.relu(input, inplace=self.inplace)
+⁄	
+relu_4
+body.10.weight
+body.10.biasconv2d_5node_conv2d_5"Conv*
+kernel_shape@@†*
+group†*
+auto_pad"NOTSET†*
+	dilations@@†*
+strides@@†*
+pads@@@@†Jï
+	namespaceá: __main__.DenoiseStack/body: torch.nn.modules.container.Sequential/body.10: torch.nn.modules.conv.Conv2d/conv2d_5: aten.conv2d.defaultJõ
+pkg.torch.onnx.class_hierarchyy['__main__.DenoiseStack', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.conv.Conv2d', 'aten.conv2d.default']JΩ
+pkg.torch.onnx.fx_node¢%conv2d_5 : [num_users=1] = call_function[target=torch.ops.aten.conv2d.default](args = (%relu_4, %p_body_10_weight, %p_body_10_bias, [1, 1], [1, 1]), kwargs = {})JA
+pkg.torch.onnx.name_scopes#['', 'body', 'body.10', 'conv2d_5']J‰
+pkg.torch.onnx.stack_trace≈File "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+  File "C:\Users\jknap\PycharmProjects\EE513\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+ò
+noisy
+conv2d_5denoisednode_sub_22"SubJ<
+	namespace/: __main__.DenoiseStack/sub_22: aten.sub.TensorJN
+pkg.torch.onnx.class_hierarchy,['__main__.DenoiseStack', 'aten.sub.Tensor']Jå
+pkg.torch.onnx.fx_noder%sub_22 : [num_users=1] = call_function[target=torch.ops.aten.sub.Tensor](args = (%noisy, %conv2d_5), kwargs = {})J,
+pkg.torch.onnx.name_scopes['', 'sub_22']Jù
+pkg.torch.onnx.stack_traceFile "C:\Users\jknap\AppData\Local\Temp\ipykernel_32980\4231641770.py", line 14, in forward
+    return noisy - self.body(noisy)
+main_graph*_ Bbody.0.weightj%
+locationhw7_noise2noise.onnx.dataj
+offset0j
+length1152p*î Bbody.0.biasJÄá&[>!J!=G¨"> m6>·¿É>’1ì=◊=ê>fÔA>Mj&>O5ÉæÊæ0ºΩ≥mH=≠√o>JNæìﬁõ=Â/< æ%äç>Õjñ>Å‡>"º%æ∞}m>¶_àæÈñæbz÷=CælµΩ£“	>–;=Ÿ*<>üﬂˇ<*c  Bbody.2.weightj%
+locationhw7_noise2noise.onnx.dataj
+offset1152j
+length36864p*î Bbody.2.biasJÄ‰<åS=ŸÄ;c(<OÖ<·Ñ'º´»T=∞V=[Aâ<bì˝<ÖÊÒ;äû<cMΩÎ^;WÁ<´Â¶;`ó<ÓÚ√º.ıπª‘ º=¶E=cºÿºy#Ω£¶êºñ¯lΩ!‘; ™=R∏'ºyÕ<˝n«º?êºôZΩ*d  Bbody.4.weightj%
+locationhw7_noise2noise.onnx.dataj
+offset38016j
+length36864p*î Bbody.4.biasJÄ≥ZsΩº|Ω/	#= !1=ú9ΩPÓm=$√Ω˝äÌªÿ˝´<¯¸èΩ∫ÚºÏ∏+=‡¶ºs·r<HÄΩRŸ=J†<)ù =ÅÆàΩ”àôªö”ºè;∞<%¿ó:®äÓ<î+á=¨"Ω≈Œ¨<π=A=»¡ìº¨hsº_‰=*d  Bbody.6.weightj%
+locationhw7_noise2noise.onnx.dataj
+offset74880j
+length36864p*î Bbody.6.biasJÄô¬9ºlœ~=g$ãΩÖº™ß<)2˚;mÀ=„
+Á:J:Ω∑˘;èEΩ@WlΩI"@ΩÄ¥≤ºÆI=ªr∏<ÿ%0=…AHΩz‹<R◊ªÇmO<˘5æº,ÀÑ<:MÑΩòZY=º
+µº+†º—3“ºhÇºªD=´)πºlÀ=*e  Bbody.8.weightj%
+locationhw7_noise2noise.onnx.dataj
+offset111744j
+length36864p*î Bbody.8.biasJÄYH5=¿]àΩ<äΩuuª≥vLºwÇ<)ÁìΩ0¯Ù<%	ª∏,øºê#=j‘h=K‡á=Éxp=M–À<›ß|Ω¶~Ωî/=Wnë;~‡W=™%=»~W=ΩDBΩÅ'ú={YT=≈‰;»Kc=¬3o<ëπ=±,iΩÿãº¢∞ÿ<*e Bbody.10.weightj%
+locationhw7_noise2noise.onnx.dataj
+offset148608j
+length1152p*Bbody.10.biasJe)=Zœ
+noisy
+
+
+
+s69
+s74"=
+/pkg.torch.export.graph_signature.InputSpec.kind
+USER_INPUT"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"*
+!pkg.torch.onnx.original_node_namenoisybñ
+denoised
+
+
+
+s69
+s74"?
+0pkg.torch.export.graph_signature.OutputSpec.kindUSER_OUTPUT"+
+!pkg.torch.onnx.original_node_namesub_22j⁄
+body.0.weight
+
+ 
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_body_0_weightj 
+body.0.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_body_0_biasj⁄
+body.2.weight
+
+ 
+ 
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_body_2_weightj 
+body.2.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_body_2_biasj⁄
+body.4.weight
+
+ 
+ 
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_body_4_weightj 
+body.4.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_body_4_biasj⁄
+body.6.weight
+
+ 
+ 
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_body_6_weightj 
+body.6.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_body_6_biasj⁄
+body.8.weight
+
+ 
+ 
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"4
+!pkg.torch.onnx.original_node_namep_body_8_weightj 
+body.8.bias
+
+
+ "<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"2
+!pkg.torch.onnx.original_node_namep_body_8_biasj‹
+body.10.weight
+
+
+ 
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"5
+!pkg.torch.onnx.original_node_namep_body_10_weightjÃ
+body.10.bias
+
+
+"<
+/pkg.torch.export.graph_signature.InputSpec.kind	PARAMETER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"3
+!pkg.torch.onnx.original_node_namep_body_10_biasj&
+conv2d
+
+
+ 
+s69
+s74j$
+relu
+
+
+ 
+s69
+s74j(
+conv2d_1
+
+
+ 
+s69
+s74j&
+relu_1
+
+
+ 
+s69
+s74j(
+conv2d_2
+
+
+ 
+s69
+s74j&
+relu_2
+
+
+ 
+s69
+s74j(
+conv2d_3
+
+
+ 
+s69
+s74j&
+relu_3
+
+
+ 
+s69
+s74j(
+conv2d_4
+
+
+ 
+s69
+s74j&
+relu_4
+
+
+ 
+s69
+s74j(
+conv2d_5
+
+
+
+s69
+s74Ç¥
+0pkg.torch.export.ExportedProgram.graph_signatureˇ
+# inputs
+p_body_0_weight: PARAMETER target='body.0.weight'
+p_body_0_bias: PARAMETER target='body.0.bias'
+p_body_2_weight: PARAMETER target='body.2.weight'
+p_body_2_bias: PARAMETER target='body.2.bias'
+p_body_4_weight: PARAMETER target='body.4.weight'
+p_body_4_bias: PARAMETER target='body.4.bias'
+p_body_6_weight: PARAMETER target='body.6.weight'
+p_body_6_bias: PARAMETER target='body.6.bias'
+p_body_8_weight: PARAMETER target='body.8.weight'
+p_body_8_bias: PARAMETER target='body.8.bias'
+p_body_10_weight: PARAMETER target='body.10.weight'
+p_body_10_bias: PARAMETER target='body.10.bias'
+noisy: USER_INPUT
+
+# outputs
+sub_22: USER_OUTPUT
+Çr
+2pkg.torch.export.ExportedProgram.range_constraints<{s69: VR[0, int_oo], s74: VR[0, int_oo], s92: VR[0, int_oo]}B
+ 
