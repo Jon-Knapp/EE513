@@ -1,0 +1,39 @@
+Info: Processing symbol 'D1:LED_THT:LED_D5.0mm'.
+Info: Processing symbol 'J1:Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'R1:Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal'.
+Changed REF** reference designator to D1.
+Changed D1 value from LED_D5.0mm to RED.
+Updated D1 symbol association from  to /c29dd0eb-9a42-55d0-98b6-ace849efe1d8.
+Updated D1 fields.
+Updated D1 sheetname to '/'.
+Updated D1 sheetfile to '01_led_resistor.kicad_sch'.
+Add net GND.
+Connected D1 pin 1 to GND.
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Updated D1 unit metadata.
+Added J1 (footprint 'Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J1.
+Changed J1 value from PinHeader_1x02_P2.54mm_Vertical to ~.
+Updated J1 symbol association from  to /60a8d7e7-a78a-5982-986b-7d78d385fc10.
+Updated J1 fields.
+Updated J1 sheetname to '/'.
+Updated J1 sheetfile to '01_led_resistor.kicad_sch'.
+Connected J1 pin 2 to GND.
+Add net +5V.
+Connected J1 pin 1 to +5V.
+Updated J1 unit metadata.
+Added D1 (footprint 'LED_THT:LED_D5.0mm').
+Added R1 (footprint 'Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal').
+Changed REF** reference designator to R1.
+Changed R1 value from R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal to 330.
+Updated R1 symbol association from  to /c01d190e-89bf-5098-bef3-8465a505faee.
+Updated R1 fields.
+Updated R1 sheetname to '/'.
+Updated R1 sheetfile to '01_led_resistor.kicad_sch'.
+Connected R1 pin 2 to Net-(D1-A).
+Connected R1 pin 1 to +5V.
+Updated R1 unit metadata.
+
+
+Info: Total warnings: 0, errors: 0.
