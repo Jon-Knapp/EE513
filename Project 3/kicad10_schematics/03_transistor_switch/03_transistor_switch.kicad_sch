@@ -1,6 +1,6 @@
 (kicad_sch
 	(version 20260306)
-	(generator "claude_sch_gen")
+	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5")
 	(paper "A4")
@@ -12,335 +12,2202 @@
 	)
 	(lib_symbols
 		(symbol "Basic:Conn_01x02_PinsRight"
-			(pin_names (offset 1.016) (hide yes))
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J" (at 0 0 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "Conn_01x02_PinsRight" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "2-pin screw-terminal / header connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_PinsRight"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2-pin screw-terminal / header connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Conn_01x02_PinsRight_0_1"
-				(rectangle (start -1.27 -3.81) (end 1.27 1.27) (stroke (width 0.254) (type default)) (fill (type background)))
-				(circle (center 0 0) (radius 0.508) (stroke (width 0.254) (type default)) (fill (type outline)))
-				(circle (center 0 -2.54) (radius 0.508) (stroke (width 0.254) (type default)) (fill (type outline)))
+				(rectangle
+					(start -1.27 -3.81)
+					(end 1.27 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 			)
 			(symbol "Conn_01x02_PinsRight_1_1"
-				(pin passive line (at 5.08 0 180) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 5.08 -2.54 180) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "Basic:SW_Push"
-			(pin_numbers (hide yes))
-			(pin_names (offset 1.016) (hide yes))
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW" (at 0 0 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "SW_Push" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "Push button" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "SW_Push_0_1"
-				(circle (center -2.032 0) (radius 0.508) (stroke (width 0.254) (type default)) (fill (type none)))
-				(circle (center 2.032 0) (radius 0.508) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy 0 1.27) (xy 0 3.048)) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy -2.54 1.27) (xy 2.54 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "SW_Push_1_1"
-				(pin passive line (at -5.08 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 5.08 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers (hide yes))
-			(pin_names (offset 0))
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R" (at 0 0 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "R" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(symbol "R_0_1"
-				(rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type none)))
-			)
-			(symbol "R_1_1"
-				(pin passive line (at 0 3.81 270) (length 1.27) (name "" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -3.81 90) (length 1.27) (name "" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Q_NPN_EBC"
-			(pin_numbers (hide yes))
-			(pin_names (offset 0) (hide yes))
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q" (at 0 0 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "Q_NPN_EBC" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "NPN transistor (E-B-C pinout, e.g. 2N3904 TO-92)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(symbol "Q_NPN_EBC_0_1"
-				(polyline (pts (xy 0.635 0.635) (xy 2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy 0.635 -0.635) (xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy 0.635 1.905) (xy 0.635 -1.905)) (stroke (width 0.508) (type default)) (fill (type none)))
-				(polyline (pts (xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)) (stroke (width 0.254) (type default)) (fill (type outline)))
-				(circle (center 1.27 0) (radius 2.8194) (stroke (width 0.254) (type default)) (fill (type none)))
-			)
-			(symbol "Q_NPN_EBC_1_1"
-				(pin input line (at -5.08 0 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 2.54 5.08 270) (length 2.54) (name "C" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 2.54 -5.08 90) (length 2.54) (name "E" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers (hide yes))
-			(pin_names (offset 1.016) (hide yes))
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D" (at 0 0 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "LED" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "LED_THT:LED_D5.0mm" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "Light emitting diode" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LED_THT:LED_D5.0mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "LED_0_1"
-				(polyline (pts (xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)) (stroke (width 0.254) (type default)) (fill (type background)))
-				(polyline (pts (xy 1.27 -1.27) (xy 1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy -0.254 1.905) (xy 1.016 3.175)) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy 0.762 1.905) (xy 2.032 3.175)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.905) (xy 1.016 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.905) (xy 2.032 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "LED_1_1"
-				(pin passive line (at -3.81 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 3.81 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Q_NPN_EBC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Q_NPN_EBC"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "NPN transistor (E-B-C pinout, e.g. 2N3904 TO-92)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_NPN_EBC_0_1"
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_NPN_EBC_1_1"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
-			(power)
-			(pin_numbers (hide yes))
-			(pin_names (offset 0) (hide yes))
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Value" "+5V" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "Power symbol: net +5V" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol: net +5V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "+5V_0_1"
-				(polyline (pts (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
-				(polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "+5V_1_1"
-				(pin power_in line (at 0 0 90) (length 0) (name "" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
-			(pin_numbers (hide yes))
-			(pin_names (offset 0) (hide yes))
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Value" "GND" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "Power symbol: net GND" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol: net GND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "GND_0_1"
-				(polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "GND_1_1"
-				(pin power_in line (at 0 0 270) (length 0) (name "" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers (hide yes))
-			(pin_names (offset 0) (hide yes))
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#FLG" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Value" "PWR_FLAG" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Description" "Power flag: marks a net as driven" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power flag: marks a net as driven"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "PWR_FLAG_0_1"
-				(polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "PWR_FLAG_1_1"
-				(pin power_out line (at 0 0 90) (length 0) (name "" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 	)
-	(junction (at 60.96 63.5) (diameter 0) (color 0 0 0 0) (uuid "b730ad43-ce02-5ce5-a99a-952f81fd1ffd"))
-	(junction (at 68.58 63.5) (diameter 0) (color 0 0 0 0) (uuid "7edbca3b-5945-5d49-bf6b-1b14c29ea490"))
-	(junction (at 76.2 63.5) (diameter 0) (color 0 0 0 0) (uuid "ce6f553e-00b7-5571-a8dc-06ee9ed10222"))
-	(junction (at 60.96 106.68) (diameter 0) (color 0 0 0 0) (uuid "318f3fe3-9140-575d-b4e8-25e7f901f96e"))
-	(junction (at 68.58 106.68) (diameter 0) (color 0 0 0 0) (uuid "a5388a9d-9103-5940-9582-825209b45f7d"))
-	(junction (at 81.28 106.68) (diameter 0) (color 0 0 0 0) (uuid "57b3f01d-bc32-596f-925e-28c017dea452"))
-	(junction (at 81.28 86.36) (diameter 0) (color 0 0 0 0) (uuid "b31e250e-a639-5291-84af-4f195cca64b5"))
-	(wire (pts (xy 55.88 76.2) (xy 60.96 76.2)) (stroke (width 0) (type default)) (uuid "5201adec-c308-5ecf-ba5e-8523b406d9c5"))
-	(wire (pts (xy 60.96 76.2) (xy 60.96 63.5)) (stroke (width 0) (type default)) (uuid "6ccfa23f-ac71-5bd1-97f0-8b5ec0847a0c"))
-	(wire (pts (xy 60.96 63.5) (xy 68.58 63.5)) (stroke (width 0) (type default)) (uuid "3a582458-229d-5186-854a-d119043d2381"))
-	(wire (pts (xy 68.58 63.5) (xy 76.2 63.5)) (stroke (width 0) (type default)) (uuid "6fc4665a-0cf0-53ca-a5d5-0551901bf6cc"))
-	(wire (pts (xy 76.2 63.5) (xy 93.98 63.5)) (stroke (width 0) (type default)) (uuid "17de89dd-15af-5b9c-9462-4eb4efaa4ef6"))
-	(wire (pts (xy 55.88 78.74) (xy 60.96 78.74)) (stroke (width 0) (type default)) (uuid "c7a6bb09-199e-5201-a825-622e8b42fc1e"))
-	(wire (pts (xy 60.96 78.74) (xy 60.96 106.68)) (stroke (width 0) (type default)) (uuid "ee105bb3-73d1-5df4-be94-15b660d47d2f"))
-	(wire (pts (xy 60.96 106.68) (xy 68.58 106.68)) (stroke (width 0) (type default)) (uuid "2e04f2bc-3e0b-5989-9df3-51a9a903cd9f"))
-	(wire (pts (xy 68.58 106.68) (xy 81.28 106.68)) (stroke (width 0) (type default)) (uuid "a216de84-303f-5fa9-9cb5-9dfcfab932e1"))
-	(wire (pts (xy 81.28 106.68) (xy 93.98 106.68)) (stroke (width 0) (type default)) (uuid "25b8a1d2-9aee-51c3-99f4-687865815884"))
-	(wire (pts (xy 76.2 73.66) (xy 76.2 76.2)) (stroke (width 0) (type default)) (uuid "3fe2fcb3-8afd-501d-a490-7a5fca77a973"))
-	(wire (pts (xy 76.2 83.82) (xy 76.2 86.36)) (stroke (width 0) (type default)) (uuid "1622725e-9b70-58db-83ff-2191ad95470d"))
-	(wire (pts (xy 76.2 86.36) (xy 81.28 86.36)) (stroke (width 0) (type default)) (uuid "d2c53f40-5fbd-53a4-82c1-dbb8e1a5fe87"))
-	(wire (pts (xy 81.28 86.36) (xy 83.82 86.36)) (stroke (width 0) (type default)) (uuid "fb01d0db-fe95-5b47-abff-e9c0c4649377"))
-	(wire (pts (xy 83.82 86.36) (xy 86.36 86.36)) (stroke (width 0) (type default)) (uuid "2dcb4f0a-f12a-59eb-88a9-016ef9fe261e"))
-	(wire (pts (xy 81.28 93.98) (xy 81.28 106.68)) (stroke (width 0) (type default)) (uuid "8c7c25f9-9015-5c20-bf86-e95de6ec0410"))
-	(wire (pts (xy 93.98 71.12) (xy 93.98 73.66)) (stroke (width 0) (type default)) (uuid "d81184d7-fef3-5804-a675-d1af2d93788d"))
-	(wire (pts (xy 93.98 91.44) (xy 93.98 106.68)) (stroke (width 0) (type default)) (uuid "3947239f-9da6-5c72-a2ed-f6d218688292"))
-	(label "BASE" (at 83.82 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d82cfcb7-617f-594f-86ce-9a580f7f256a"))
-	(text "R2 keeps the base low when SW1 is open.\nBase current ~ (5-0.7)/10k = 0.4 mA -> saturated." (exclude_from_sim no) (at 112 70 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "253ca895-befe-5a50-bf1a-5401ec4ae91e"))
-	(symbol (lib_id "Basic:Conn_01x02_PinsRight") (at 50.8 76.2 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "80a523c5-50b7-5d1d-a722-8dac2d698266")
-		(property "Reference" "J1" (at 47.3 70.7 0) (effects (font (size 1.27 1.27))))
-		(property "Value" "" (at 50.8 76.2 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 50.8 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 50.8 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "2-pin screw-terminal / header connector" (at 50.8 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "f327f97c-d613-5134-a763-8be2fd8a7768"))
-		(pin "2" (uuid "e262e24c-cc43-56af-ad34-802f960e3856"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "J1") (unit 1))))
+	(text "R2 keeps the base low when SW1 is open.\nBase current ~ (5-0.7)/10k = 0.4 mA -> saturated."
+		(exclude_from_sim no)
+		(at 112 70 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "253ca895-befe-5a50-bf1a-5401ec4ae91e")
 	)
-	(symbol (lib_id "Basic:SW_Push") (at 76.2 68.58 270) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "f3b2cd83-b13d-5b10-a1f5-e88b87deb0e8")
-		(property "Reference" "SW1" (at 78.74 67.31 90) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "START" (at 78.74 69.85 90) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 76.2 68.58 90) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 76.2 68.58 90) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Push button" (at 76.2 68.58 90) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "b28cc2b4-0870-5781-978b-1d65b3a16661"))
-		(pin "2" (uuid "904f9c9c-200e-5965-8589-54c67d130ed1"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "SW1") (unit 1))))
+	(junction
+		(at 60.96 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "318f3fe3-9140-575d-b4e8-25e7f901f96e")
 	)
-	(symbol (lib_id "Device:R") (at 76.2 80.01 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "bb0eca13-7d51-58ba-b598-45aba5a4054b")
-		(property "Reference" "R1" (at 78.74 78.74 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "10k" (at 78.74 81.28 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 76.2 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 76.2 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Resistor" (at 76.2 80.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "cd5ce749-e7c9-5ed0-88a4-56c5a19ccae7"))
-		(pin "2" (uuid "623d44b5-6686-53fa-898a-0240878a78dd"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "R1") (unit 1))))
+	(junction
+		(at 81.28 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57b3f01d-bc32-596f-925e-28c017dea452")
 	)
-	(symbol (lib_id "Device:Q_NPN_EBC") (at 91.44 86.36 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "b8851ba3-21d1-5adf-a1ca-5d11132d06df")
-		(property "Reference" "Q1" (at 96.94 83.36 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "2N3904" (at 96.94 85.86 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (at 91.44 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 91.44 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "NPN transistor (E-B-C pinout, e.g. 2N3904 TO-92)" (at 91.44 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "2" (uuid "709819b4-3763-5412-9edf-18e707e78b9c"))
-		(pin "3" (uuid "1c6a94f3-09ac-57e2-b593-6c7668e5bb1e"))
-		(pin "1" (uuid "1a37fc38-83b5-500d-8912-8574a57998b4"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "Q1") (unit 1))))
+	(junction
+		(at 68.58 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7edbca3b-5945-5d49-bf6b-1b14c29ea490")
 	)
-	(symbol (lib_id "Device:R") (at 81.28 90.17 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "85abaaa9-e22d-5340-b581-6930621a069a")
-		(property "Reference" "R2" (at 78.74 88.9 0) (effects (font (size 1.27 1.27)) (justify right)))
-		(property "Value" "100k" (at 78.74 91.44 0) (effects (font (size 1.27 1.27)) (justify right)))
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 81.28 90.17 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 81.28 90.17 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Resistor" (at 81.28 90.17 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "dc1bd76b-039c-5983-a2f4-5abe947bb4db"))
-		(pin "2" (uuid "a1b29be7-a146-5d09-bd7b-7586127f4d58"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "R2") (unit 1))))
+	(junction
+		(at 68.58 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5388a9d-9103-5940-9582-825209b45f7d")
 	)
-	(symbol (lib_id "Device:R") (at 93.98 67.31 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "e6022b19-ab41-5c4d-912b-20832a2e9fbb")
-		(property "Reference" "R3" (at 96.52 66.04 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "330" (at 96.52 68.58 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 93.98 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 93.98 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Resistor" (at 93.98 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "1d5fcbc0-c408-5d2d-a7eb-9c1761182197"))
-		(pin "2" (uuid "ac287250-d4f9-52ee-9e67-2f7f00b7257d"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "R3") (unit 1))))
+	(junction
+		(at 81.28 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b31e250e-a639-5291-84af-4f195cca64b5")
 	)
-	(symbol (lib_id "Device:LED") (at 93.98 77.47 90) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "b6d152ea-a7e5-58ec-b232-ec1e3a821b70")
-		(property "Reference" "D1" (at 96.52 76.2 90) (effects (font (size 1.27 1.27)) (justify right)))
-		(property "Value" "GREEN" (at 96.52 78.74 90) (effects (font (size 1.27 1.27)) (justify right)))
-		(property "Footprint" "LED_THT:LED_D5.0mm" (at 93.98 77.47 90) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 93.98 77.47 90) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Light emitting diode" (at 93.98 77.47 90) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "02816bf6-5cc7-551b-b65d-cb37213ca5ed"))
-		(pin "2" (uuid "ed527e98-6ccb-5da1-a8b1-af519f8d837c"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "D1") (unit 1))))
+	(junction
+		(at 60.96 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b730ad43-ce02-5ce5-a99a-952f81fd1ffd")
 	)
-	(symbol (lib_id "power:+5V") (at 60.96 63.5 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "9ceb1323-574c-5f90-a4eb-accfa91ab6f5")
-		(property "Reference" "#PWR01" (at 60.96 63.5 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
-		(property "Value" "+5V" (at 60.96 59.69 0) (effects (font (size 1.27 1.27))))
-		(property "Footprint" "" (at 60.96 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 60.96 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Power symbol: net +5V" (at 60.96 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "6cadafee-d1a8-550f-afa6-55c37fcc3b34"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "#PWR01") (unit 1))))
+	(junction
+		(at 76.2 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce6f553e-00b7-5571-a8dc-06ee9ed10222")
 	)
-	(symbol (lib_id "power:GND") (at 60.96 106.68 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-		(uuid "b86a936a-9b57-50fd-9286-b706b0013f78")
-		(property "Reference" "#PWR02" (at 60.96 106.68 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
-		(property "Value" "GND" (at 60.96 110.49 0) (effects (font (size 1.27 1.27))))
-		(property "Footprint" "" (at 60.96 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 60.96 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Power symbol: net GND" (at 60.96 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "32c7fe11-0636-57b8-a614-284e07bb0984"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "#PWR02") (unit 1))))
+	(wire
+		(pts
+			(xy 76.2 83.82) (xy 76.2 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1622725e-9b70-58db-83ff-2191ad95470d")
 	)
-	(symbol (lib_id "power:PWR_FLAG") (at 68.58 63.5 0) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+	(wire
+		(pts
+			(xy 76.2 63.5) (xy 93.98 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17de89dd-15af-5b9c-9462-4eb4efaa4ef6")
+	)
+	(wire
+		(pts
+			(xy 81.28 106.68) (xy 93.98 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25b8a1d2-9aee-51c3-99f4-687865815884")
+	)
+	(wire
+		(pts
+			(xy 60.96 106.68) (xy 68.58 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e04f2bc-3e0b-5989-9df3-51a9a903cd9f")
+	)
+	(wire
+		(pts
+			(xy 93.98 91.44) (xy 93.98 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3947239f-9da6-5c72-a2ed-f6d218688292")
+	)
+	(wire
+		(pts
+			(xy 60.96 63.5) (xy 68.58 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a582458-229d-5186-854a-d119043d2381")
+	)
+	(wire
+		(pts
+			(xy 76.2 73.66) (xy 76.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fe2fcb3-8afd-501d-a490-7a5fca77a973")
+	)
+	(wire
+		(pts
+			(xy 55.88 76.2) (xy 60.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5201adec-c308-5ecf-ba5e-8523b406d9c5")
+	)
+	(wire
+		(pts
+			(xy 60.96 76.2) (xy 60.96 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ccfa23f-ac71-5bd1-97f0-8b5ec0847a0c")
+	)
+	(wire
+		(pts
+			(xy 68.58 63.5) (xy 76.2 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fc4665a-0cf0-53ca-a5d5-0551901bf6cc")
+	)
+	(wire
+		(pts
+			(xy 81.28 93.98) (xy 81.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c7c25f9-9015-5c20-bf86-e95de6ec0410")
+	)
+	(wire
+		(pts
+			(xy 68.58 106.68) (xy 81.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a216de84-303f-5fa9-9cb5-9dfcfab932e1")
+	)
+	(wire
+		(pts
+			(xy 55.88 78.74) (xy 60.96 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a6bb09-199e-5201-a825-622e8b42fc1e")
+	)
+	(wire
+		(pts
+			(xy 76.2 86.36) (xy 81.28 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c53f40-5fbd-53a4-82c1-dbb8e1a5fe87")
+	)
+	(wire
+		(pts
+			(xy 93.98 71.12) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81184d7-fef3-5804-a675-d1af2d93788d")
+	)
+	(wire
+		(pts
+			(xy 60.96 78.74) (xy 60.96 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee105bb3-73d1-5df4-be94-15b660d47d2f")
+	)
+	(wire
+		(pts
+			(xy 81.28 86.36) (xy 86.36 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb01d0db-fe95-5b47-abff-e9c0c4649377")
+	)
+	(label "BASE"
+		(at 83.82 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d82cfcb7-617f-594f-86ce-9a580f7f256a")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 68.58 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "06075032-1751-559e-b1e4-ee17b46ef618")
-		(property "Reference" "#FLG01" (at 68.58 63.5 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
-		(property "Value" "PWR_FLAG" (at 68.58 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Footprint" "" (at 68.58 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 68.58 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Power flag: marks a net as driven" (at 68.58 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "51d211a4-a3ad-5e87-ae1a-fbe993349e73"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "#FLG01") (unit 1))))
+		(property "Reference" "#FLG01"
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power flag: marks a net as driven"
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51d211a4-a3ad-5e87-ae1a-fbe993349e73")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(symbol (lib_id "power:PWR_FLAG") (at 68.58 106.68 180) (unit 1)
-		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 68.58 106.68 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "1029c7ab-9b31-5a46-b9a1-27bd455f1571")
-		(property "Reference" "#FLG02" (at 68.58 106.68 0) (effects (font (size 1.27 1.27)) (justify right) (hide yes)))
-		(property "Value" "PWR_FLAG" (at 68.58 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Footprint" "" (at 68.58 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Datasheet" "" (at 68.58 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(property "Description" "Power flag: marks a net as driven" (at 68.58 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
-		(pin "1" (uuid "8173e6f8-b70b-5c6a-bb22-95f3e6b11edb"))
-		(instances (project "03_transistor_switch" (path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5" (reference "#FLG02") (unit 1))))
+		(property "Reference" "#FLG02"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 68.58 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power flag: marks a net as driven"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8173e6f8-b70b-5c6a-bb22-95f3e6b11edb")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(sheet_instances (path "/" (page "1")))
+	(symbol
+		(lib_id "Basic:Conn_01x02_PinsRight")
+		(at 50.8 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80a523c5-50b7-5d1d-a722-8dac2d698266")
+		(property "Reference" "J1"
+			(at 47.3 70.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2-pin screw-terminal / header connector"
+			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f327f97c-d613-5134-a763-8be2fd8a7768")
+		)
+		(pin "2"
+			(uuid "e262e24c-cc43-56af-ad34-802f960e3856")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 81.28 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85abaaa9-e22d-5340-b581-6930621a069a")
+		(property "Reference" "R2"
+			(at 78.74 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 78.74 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 81.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 81.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc1bd76b-039c-5983-a2f4-5abe947bb4db")
+		)
+		(pin "2"
+			(uuid "a1b29be7-a146-5d09-bd7b-7586127f4d58")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 60.96 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ceb1323-574c-5f90-a4eb-accfa91ab6f5")
+		(property "Reference" "#PWR01"
+			(at 60.96 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 60.96 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol: net +5V"
+			(at 60.96 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6cadafee-d1a8-550f-afa6-55c37fcc3b34")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 93.98 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6d152ea-a7e5-58ec-b232-ec1e3a821b70")
+		(property "Reference" "D1"
+			(at 96.52 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 96.52 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 93.98 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 93.98 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02816bf6-5cc7-551b-b65d-cb37213ca5ed")
+		)
+		(pin "2"
+			(uuid "ed527e98-6ccb-5da1-a8b1-af519f8d837c")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b86a936a-9b57-50fd-9286-b706b0013f78")
+		(property "Reference" "#PWR02"
+			(at 60.96 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol: net GND"
+			(at 60.96 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32c7fe11-0636-57b8-a614-284e07bb0984")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NPN_EBC")
+		(at 91.44 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8851ba3-21d1-5adf-a1ca-5d11132d06df")
+		(property "Reference" "Q1"
+			(at 96.94 83.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N3904"
+			(at 96.94 85.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 91.44 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "NPN transistor (E-B-C pinout, e.g. 2N3904 TO-92)"
+			(at 91.44 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "709819b4-3763-5412-9edf-18e707e78b9c")
+		)
+		(pin "3"
+			(uuid "1c6a94f3-09ac-57e2-b593-6c7668e5bb1e")
+		)
+		(pin "1"
+			(uuid "1a37fc38-83b5-500d-8912-8574a57998b4")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb0eca13-7d51-58ba-b598-45aba5a4054b")
+		(property "Reference" "R1"
+			(at 78.74 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 78.74 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 76.2 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 76.2 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd5ce749-e7c9-5ed0-88a4-56c5a19ccae7")
+		)
+		(pin "2"
+			(uuid "623d44b5-6686-53fa-898a-0240878a78dd")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6022b19-ab41-5c4d-912b-20832a2e9fbb")
+		(property "Reference" "R3"
+			(at 96.52 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 96.52 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 93.98 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d5fcbc0-c408-5d2d-a7eb-9c1761182197")
+		)
+		(pin "2"
+			(uuid "ac287250-d4f9-52ee-9e67-2f7f00b7257d")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Basic:SW_Push")
+		(at 76.2 68.58 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3b2cd83-b13d-5b10-a1f5-e88b87deb0e8")
+		(property "Reference" "SW1"
+			(at 78.74 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "START"
+			(at 78.74 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 76.2 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button"
+			(at 76.2 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b28cc2b4-0870-5781-978b-1d65b3a16661")
+		)
+		(pin "2"
+			(uuid "904f9c9c-200e-5965-8589-54c67d130ed1")
+		)
+		(instances
+			(project "03_transistor_switch"
+				(path "/63c3b3a8-691f-5bd6-83ba-aaab7edb2bd5"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 	(embedded_fonts no)
 )
