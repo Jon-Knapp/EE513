@@ -243,7 +243,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -662,13 +662,18 @@
       {
         "filename": "02_divider_rc_filter.kicad_sch",
         "name": "02_divider_rc_filter",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "91cd48bd-2770-508d-ac55-b3f2ba68e259"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "91cd48bd-2770-508d-ac55-b3f2ba68e259",
+      "02_divider_rc_filter"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

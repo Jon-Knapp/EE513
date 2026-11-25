@@ -1112,7 +1112,7 @@
 		(uuid "cec21554-78d4-5561-9e68-c0dbee5d4dd9")
 	)
 	(junction
-		(at 93.98 86.36)
+		(at 93.98 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5a6278c-9411-5043-95d0-d4fc7cb3e2cd")
@@ -1122,6 +1122,22 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e147f0c4-631b-53ae-bac1-dbaee870c77b")
+	)
+	(junction
+		(at 127 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8e4e163-b003-4d3d-9351-cee1b3ce36c2")
+	)
+	(wire
+		(pts
+			(xy 119.38 85.09) (xy 127 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00fd73b3-3b59-4ccd-a4ab-ac657ea2443d")
 	)
 	(wire
 		(pts
@@ -1165,23 +1181,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 86.36) (xy 96.52 86.36)
+			(xy 93.98 85.09) (xy 111.76 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3928fb4a-0d90-5de3-9ff3-ad0756256b47")
-	)
-	(wire
-		(pts
-			(xy 93.98 86.36) (xy 93.98 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4abb018d-0d41-5a29-aec0-6fab30925f5b")
 	)
 	(wire
 		(pts
@@ -1192,6 +1198,16 @@
 			(type default)
 		)
 		(uuid "4cac5207-71d2-5e43-ae65-72860252e684")
+	)
+	(wire
+		(pts
+			(xy 127 85.09) (xy 127 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d3a00ed-be0d-4e3f-b8e0-45124a05a381")
 	)
 	(wire
 		(pts
@@ -1295,7 +1311,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 71.12) (xy 127 96.52)
+			(xy 93.98 81.28) (xy 93.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3457ac7-cfb9-496e-b022-975ee7290fcf")
+	)
+	(wire
+		(pts
+			(xy 127 71.12) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1312,26 +1338,6 @@
 			(type default)
 		)
 		(uuid "b934bb58-33cc-56da-b7af-e947a8115c96")
-	)
-	(wire
-		(pts
-			(xy 104.14 86.36) (xy 106.68 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdf2a0e4-93aa-5395-bfbe-9d955702e37d")
-	)
-	(wire
-		(pts
-			(xy 93.98 81.28) (xy 93.98 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3f071ca-43b0-513e-9cec-548b9a1412e6")
 	)
 	(wire
 		(pts
@@ -1402,16 +1408,6 @@
 			(justify left bottom)
 		)
 		(uuid "094810a3-5627-5925-8c1f-829cfa58ceba")
-	)
-	(label "B2"
-		(at 106.68 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3478e8ac-3ed2-5317-b456-7026087a826b")
 	)
 	(label "B1"
 		(at 157.48 86.36 0)
@@ -1662,7 +1658,7 @@
 	)
 	(symbol
 		(lib_id "Device:CP")
-		(at 100.33 86.36 90)
+		(at 115.57 85.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1672,7 +1668,7 @@
 		(dnp no)
 		(uuid "63bce226-e023-5a7a-bfd0-a83485e5891b")
 		(property "Reference" "C1"
-			(at 100.33 82.76 90)
+			(at 115.57 81.49 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1682,7 +1678,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 100.33 90.16 90)
+			(at 115.57 88.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1692,7 +1688,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 100.33 86.36 90)
+			(at 115.57 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1703,7 +1699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 86.36 90)
+			(at 115.57 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1714,7 +1710,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 100.33 86.36 90)
+			(at 115.57 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1980,7 +1976,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 93.98 77.47 90)
+		(at 93.98 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1990,7 +1986,7 @@
 		(dnp no)
 		(uuid "83238812-bd33-5e69-8bb7-034bc1369829")
 		(property "Reference" "D1"
-			(at 96.52 76.2 90)
+			(at 91.44 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2001,7 +1997,7 @@
 			)
 		)
 		(property "Value" "RED"
-			(at 96.52 78.74 90)
+			(at 91.44 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2061,7 +2057,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 144.78 77.47 90)
+		(at 144.78 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2071,7 +2067,7 @@
 		(dnp no)
 		(uuid "a525015c-930e-502d-8bde-be002863aeee")
 		(property "Reference" "D2"
-			(at 147.32 76.2 90)
+			(at 142.24 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2082,7 +2078,7 @@
 			)
 		)
 		(property "Value" "GREEN"
-			(at 147.32 78.74 90)
+			(at 142.24 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

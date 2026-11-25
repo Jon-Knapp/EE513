@@ -460,9 +460,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "Device:Q_NPN_EBC"
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1111,7 +1108,7 @@
 		(uuid "57b3f01d-bc32-596f-925e-28c017dea452")
 	)
 	(junction
-		(at 68.58 63.5)
+		(at 68.58 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7edbca3b-5945-5d49-bf6b-1b14c29ea490")
@@ -1129,13 +1126,13 @@
 		(uuid "b31e250e-a639-5291-84af-4f195cca64b5")
 	)
 	(junction
-		(at 60.96 63.5)
+		(at 60.96 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b730ad43-ce02-5ce5-a99a-952f81fd1ffd")
 	)
 	(junction
-		(at 76.2 63.5)
+		(at 76.2 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce6f553e-00b7-5571-a8dc-06ee9ed10222")
@@ -1152,7 +1149,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 63.5) (xy 93.98 63.5)
+			(xy 76.2 62.23) (xy 93.98 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +1189,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 63.5) (xy 68.58 63.5)
+			(xy 60.96 62.23) (xy 68.58 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1212,6 +1209,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 80.01) (xy 93.98 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51427360-814a-4056-889d-1d8bc597406b")
+	)
+	(wire
+		(pts
 			(xy 55.88 76.2) (xy 60.96 76.2)
 		)
 		(stroke
@@ -1222,17 +1229,27 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 76.2) (xy 60.96 63.5)
+			(xy 93.98 62.23) (xy 93.98 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ccfa23f-ac71-5bd1-97f0-8b5ec0847a0c")
+		(uuid "5cf419a3-07bc-4997-b531-57c74665919e")
 	)
 	(wire
 		(pts
-			(xy 68.58 63.5) (xy 76.2 63.5)
+			(xy 76.2 62.23) (xy 76.2 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631c5d1a-2160-43a8-8b47-4b21933412fa")
+	)
+	(wire
+		(pts
+			(xy 68.58 62.23) (xy 76.2 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1262,6 +1279,26 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 58.42) (xy 68.58 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4f2f4c-bb06-430e-baf6-38c4b7980516")
+	)
+	(wire
+		(pts
+			(xy 60.96 59.69) (xy 60.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c636f39c-43ec-4115-b2d8-e3417d327826")
+	)
+	(wire
+		(pts
 			(xy 55.88 78.74) (xy 60.96 78.74)
 		)
 		(stroke
@@ -1282,7 +1319,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 71.12) (xy 93.98 73.66)
+			(xy 93.98 71.12) (xy 93.98 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1310,6 +1347,16 @@
 		)
 		(uuid "fb01d0db-fe95-5b47-abff-e9c0c4649377")
 	)
+	(wire
+		(pts
+			(xy 60.96 107.95) (xy 60.96 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffab65a9-98e5-47bc-a9d5-3c069ffc7c14")
+	)
 	(label "BASE"
 		(at 83.82 86.36 0)
 		(effects
@@ -1322,7 +1369,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 68.58 63.5 0)
+		(at 68.58 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1332,7 +1379,7 @@
 		(dnp no)
 		(uuid "06075032-1751-559e-b1e4-ee17b46ef618")
 		(property "Reference" "#FLG01"
-			(at 68.58 63.5 0)
+			(at 68.58 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1344,7 +1391,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 68.58 59.69 0)
+			(at 68.58 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1355,7 +1402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 63.5 0)
+			(at 68.58 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1366,7 +1413,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 63.5 0)
+			(at 68.58 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1377,7 +1424,7 @@
 			)
 		)
 		(property "Description" "Power flag: marks a net as driven"
-			(at 68.58 63.5 0)
+			(at 68.58 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1642,7 +1689,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 60.96 63.5 0)
+		(at 60.96 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1652,7 +1699,7 @@
 		(dnp no)
 		(uuid "9ceb1323-574c-5f90-a4eb-accfa91ab6f5")
 		(property "Reference" "#PWR01"
-			(at 60.96 63.5 0)
+			(at 60.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1664,7 +1711,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 60.96 59.69 0)
+			(at 60.96 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1674,7 +1721,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 63.5 0)
+			(at 60.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1685,7 +1732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 63.5 0)
+			(at 60.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1696,7 +1743,7 @@
 			)
 		)
 		(property "Description" "Power symbol: net +5V"
-			(at 60.96 63.5 0)
+			(at 60.96 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1720,7 +1767,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 93.98 77.47 90)
+		(at 93.98 76.2 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1730,7 +1777,7 @@
 		(dnp no)
 		(uuid "b6d152ea-a7e5-58ec-b232-ec1e3a821b70")
 		(property "Reference" "D1"
-			(at 96.52 76.2 90)
+			(at 91.44 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1741,7 +1788,7 @@
 			)
 		)
 		(property "Value" "GREEN"
-			(at 96.52 78.74 90)
+			(at 91.44 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1752,7 +1799,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 93.98 77.47 90)
+			(at 93.98 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1763,7 +1810,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 77.47 90)
+			(at 93.98 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1774,7 +1821,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 93.98 77.47 90)
+			(at 93.98 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1801,7 +1848,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 106.68 0)
+		(at 60.96 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1811,7 +1858,7 @@
 		(dnp no)
 		(uuid "b86a936a-9b57-50fd-9286-b706b0013f78")
 		(property "Reference" "#PWR02"
-			(at 60.96 106.68 0)
+			(at 60.96 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1823,7 +1870,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 110.49 0)
+			(at 60.96 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1833,7 +1880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 106.68 0)
+			(at 60.96 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1844,7 +1891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 106.68 0)
+			(at 60.96 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1855,7 +1902,7 @@
 			)
 		)
 		(property "Description" "Power symbol: net GND"
-			(at 60.96 106.68 0)
+			(at 60.96 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
