@@ -1457,7 +1457,7 @@
 		(descr "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)")
 		(tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
 		(property "Reference" "Q1"
-			(at 1.27 -3.56 90)
+			(at 3 -3.5 90)
 			(layer "F.SilkS")
 			(uuid "606d129a-d9db-422a-b0b4-2f8608d695da")
 			(effects
@@ -1873,7 +1873,7 @@
 		(descr "Soldered wire connection, for a single 0.5 mm² wire, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.50 (https://www.staubli.com/content/dam/ecs/catalogs-brochures/TM/CAB-Main-11014119-en.pdf#page=9), bend radius 3 times outer diameter")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J1"
-			(at 0 -2.28 0)
+			(at -3 0 0)
 			(layer "F.SilkS")
 			(uuid "52ce5a9f-7faf-4a6b-a944-c4786dfef81d")
 			(effects
@@ -2404,7 +2404,7 @@
 		(descr "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)")
 		(tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
 		(property "Reference" "Q2"
-			(at 1.27 -3.56 90)
+			(at 3 -3.56 90)
 			(layer "F.SilkS")
 			(uuid "37a4599a-88e2-40bf-a7b6-5854f111d2c7")
 			(effects
